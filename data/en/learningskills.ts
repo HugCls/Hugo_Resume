@@ -1,6 +1,4 @@
-import { FaReact, FaNodeJs, FaHtml5, FaCss3 } from 'react-icons/fa'
 import { SiNextDotJs, SiTypescript, SiRubygems } from 'react-icons/si'
-import { ImGit } from 'react-icons/im'
 import { LearningSkillsInterface } from '../../components/section/learningSkills/types'
 
 
