@@ -1,8 +1,8 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
-import SectionTitle from '../../section-title'
-import SkillsItem from './item'
-import skills from '../../../data/en/skills'
+import SectionSubTitle from '../../section-subttle'
+import LearningSkillsItem from './item'
+import learningSkills from '../../../data/en/learningskills'
 
 const Skills: React.FC = () => {
   return (
@@ -14,14 +14,14 @@ const Skills: React.FC = () => {
       mx="auto"
       mt="48"
     >
-      <SectionTitle>Skills I feel comfortable with</SectionTitle>
+      <SectionSubTitle>Skills I'm currently learning</SectionSubTitle>
       <Flex flexWrap="wrap">
-        {skills.map(skill => (
-          <SkillsItem
-            key={skill.name}
-            name={skill.name}
+        {learningSkills.map(learningSkill => (
+          <LearningSkillsItem
+            key={learningSkill.name}
+            name={learningSkill.name}
             // expTime={skill.expTime}
-            icon={skill.icon}
+            icon={learningSkill.icon}
           />
         ))}
       </Flex>
