@@ -30,7 +30,7 @@ const Subtitle: React.FC<SubtitleInterface> = ({ email }) => {
         mx={{ sm: '2', lg: '3' }}
       />
 
-      <Link href="mailto:rafagoulartb@gmail.com" isExternal>
+      <Link href="mailto:hugoclaisse92@gmail.com" isExternal>
         <Text fontWeight="light" textTransform="uppercase">
           {email}
         </Text>
