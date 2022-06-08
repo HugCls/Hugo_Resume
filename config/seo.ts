@@ -1,11 +1,11 @@
 
 const seoConfig = {
   title: "Hugo Claisse - Junior front-end developper Portfolio",
-  description: "I'm Hugo Claisse, Frontend Developer and I work with React.js, Next.js, React Native and Node.js.",
+  description: "I'm Hugo Claisse, Frontend Developer and I work with React.js, Next.js and Node.js.",
   openGraph: {
     url: '',
-    title: 'Hugo Claisse Portfolio - Next.js, Typescript and React Native',
-    description: 'It is my portfolio as a Front-end Developer',
+    title: 'Hugo Claisse Portfolio - Next.js, Typescript',
+    description: 'It is my portfolio as a Junior Front-end Developer',
     images: [
       {
         url: '/og/og-image.png',
