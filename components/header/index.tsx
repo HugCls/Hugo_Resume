@@ -4,6 +4,7 @@ import Logo from './logo'
 import { navLinks } from './constants'
 import ScrollLink from '../scoll-link'
 import { motion } from 'framer-motion'
+import { ColorModeSwitcher } from './ColorModeSwitcher'
 
 interface MenuItem {
   link?: string
@@ -99,6 +100,7 @@ const Header: React.FC = props => {
         marginTop={{ sm: '20px', lg: '0' }}
       >
         <Divider />
+        <ColorModeSwitcher sx={{mr: 6}}/>
         {navLinks.map(item => (
           <motion.div
             initial="hidden"
