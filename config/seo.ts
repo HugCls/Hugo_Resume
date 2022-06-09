@@ -11,7 +11,7 @@ const seoConfig = {
         url: '/og/og-image.png',
         width: 900,
         height: 800,
-        alt: 'Hugo Claisse Portfolio - Next.js, Typescript and React Native',
+        alt: 'Hugo Claisse Portfolio - Next.js, Typescript and React.js',
       }
     ],
     site_name: 'Hugo Claisse - junior front-end developper Portfolio',

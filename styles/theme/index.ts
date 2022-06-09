@@ -1,4 +1,6 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode } from "@chakra-ui/theme-tools";
+
 
 // Global style overrides
 import styles from './styles'
@@ -16,7 +18,7 @@ const config: ThemeConfig = {
 }
 
 const theme = extendTheme({
-  config, styles, colors, breakpoints, fonts, fontWeights, fontSizes, radii
+  config, styles, colors, breakpoints, fonts, fontWeights, fontSizes, radii, body: { bg: mode('gray.50', 'white') },
 })
 
 export default theme;
