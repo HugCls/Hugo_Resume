@@ -1,4 +1,4 @@
-import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
 
 // Global style overrides
 import styles from './styles'
@@ -8,6 +8,7 @@ import colors from './foundations/colors'
 import breakpoints from './foundations/breakpoints'
 import radii from './foundations/radii'
 import { fonts, fontSizes, fontWeights } from './foundations/fonts'
+import { ThemeConfig } from '@chakra-ui/theme'
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
