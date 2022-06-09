@@ -8,7 +8,7 @@ import colors from './foundations/colors'
 import breakpoints from './foundations/breakpoints'
 import radii from './foundations/radii'
 import { fonts, fontSizes, fontWeights } from './foundations/fonts'
-import { ThemeConfig } from '@chakra-ui/theme'
+import { type ThemeConfig } from '@chakra-ui/theme'
 
 const config: ThemeConfig = {
   initialColorMode: 'light',

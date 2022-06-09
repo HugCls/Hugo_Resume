@@ -12,7 +12,7 @@ import LearningSkills from '../components/section/learningSkills'
 
 const Home: React.FC = () => {
   return (
-    <Grid bg="#fafafa">
+    <Grid bg="#202124">
       <Header />
       <About />
       <Portfolio />
