@@ -48,7 +48,7 @@ const Header: React.FC = props => {
       paddingY="1.5em"
       backgroundColor="white"
       boxShadow="0px 0px 3px rgba(44, 44, 44, 0.267);"
-      color="white"
+      color="mode.text"
       zIndex={999}
       {...props}
     >
@@ -100,7 +100,7 @@ const Header: React.FC = props => {
         marginTop={{ sm: '20px', lg: '0' }}
       >
         <Divider />
-        <ColorModeSwitcher sx={{mr: 6}}/>
+
         {navLinks.map(item => (
           <motion.div
             initial="hidden"
@@ -119,7 +119,21 @@ const Header: React.FC = props => {
             </MenuItems>
           </motion.div>
         ))}
+
       </Box>
+      <motion.div
+      initial="hidden"
+            animate="visible"
+            transition={transition}
+            variants={{
+              hidden: { y: -150, opacity: 0 },
+              visible: {
+                y: 0,
+                opacity: 1
+              }
+            }}>
+      <ColorModeSwitcher />
+      </motion.div>
     </Flex>
   )
 }

@@ -10,7 +10,7 @@ const SkillsItem: React.FC<SkillsInterface> = ({ name, icon }) => {
       flexDir="column"
       textAlign="center"
       p="10"
-      bg="white"
+      bg="mode.bg"
       borderRadius="lg"
       m="3"
       flexBasis="250px"

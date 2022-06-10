@@ -13,7 +13,7 @@ const Subtitle: React.FC<SubtitleInterface> = ({ email }) => {
       alignItems="center"
       textTransform="uppercase"
       fontSize={{ sm: 'md', lg: '3xl' }}
-      color="gray.500"
+      color="mode.text"
     >
       <Heading as="h2" fontSize={{ sm: 'xl', lg: '3xl' }}>
         <Text fontWeight="light" display="inline">
