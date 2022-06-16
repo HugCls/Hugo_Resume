@@ -20,4 +20,8 @@ export const navLinks: navLinksProps[] = [
     label: 'Skills',
     link: 'skills'
   },
+  {
+    label: 'Hobbies',
+    link: 'hobbies'
+  }
 ]
