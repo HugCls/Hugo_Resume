@@ -2,8 +2,11 @@ import React from 'react'
 import { Box, Text, Heading } from '@chakra-ui/react'
 import { HobbiesInterface } from './types'
 
-
-const HobbiesItem: React.FC<HobbiesInterface> = ({ name, icon }) => {
+const HobbiesItem: React.FC<HobbiesInterface> = ({
+  name,
+  description,
+  icon
+}) => {
   return (
     <Box
       display="flex"
@@ -26,6 +29,9 @@ const HobbiesItem: React.FC<HobbiesInterface> = ({ name, icon }) => {
       <Heading as="h2" fontSize="xl" py="5">
         {name}
       </Heading>
+      <Text lineHeight="tall" fontWeight="light" fontSize="lg">
+        {description}
+      </Text>
     </Box>
   )
 }

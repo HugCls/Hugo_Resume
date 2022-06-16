@@ -2,6 +2,6 @@ import { IconType } from "react-icons/lib";
 
 export interface HobbiesInterface {
   name: string
-  // expTime: () => string
+  description: string
   icon?: IconType
 }

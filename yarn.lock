@@ -2047,6 +2047,11 @@
   dependencies:
     "js-tokens" "^3.0.0 || ^4.0.0"
 
+"material-icons@^1.11.2":
+  "integrity" "sha512-maKSVQNQEHrHXjKTPTwH0141hR2bC8fFUaX4bJzzwVRs7jY+9A+jx0kH/lpgEGIPoYR8gho4iLDvWN3mBRL53A=="
+  "resolved" "https://registry.npmjs.org/material-icons/-/material-icons-1.11.2.tgz"
+  "version" "1.11.2"
+
 "merge2@^1.3.0":
   "integrity" "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg=="
   "resolved" "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
