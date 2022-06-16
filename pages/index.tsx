@@ -9,6 +9,7 @@ import BeforeExperiences from '../components/section/beforeExperiences'
 import Skills from '../components/section/skills'
 import Footer from '../components/footer/'
 import LearningSkills from '../components/section/learningSkills'
+import Hobbies from '../components/section/hobbies'
 
 const Home: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
       <BeforeExperiences />
       <Skills />
       <LearningSkills />
+      <Hobbies />
       <Footer />
     </Grid>
   )
