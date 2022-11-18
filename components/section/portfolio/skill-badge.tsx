@@ -8,7 +8,7 @@ interface SkillBadge {
 const SkillBadge: React.FC<SkillBadge> = ({ skills }) => {
   if (skills)
     return (
-      <Flex flexWrap="wrap">
+      <Flex flexWrap="wrap" align="flex-end">
         {skills.map(skill => (
           <Box key={skill} mr="2" _last={{ mr: '0' }}>
             <Badge bg="gray.200" color="white">

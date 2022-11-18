@@ -23,7 +23,7 @@ const Experiences: React.FC = () => {
             key={service.name}
             name={service.name}
             description={service.description}
-            // expTime={experiences.expTime}
+            expTime={service.expTime}
             icon={service.icon}
           />
         ))}

@@ -2,42 +2,30 @@ import { ProjectsInterface } from "../../components/section/portfolio/types"
 
 const projects: ProjectsInterface[] = [
   {
+    name: "'Mudcat' Ward's Website",
+    description: "A website for an American bluesman : 'Mudcat Ward'. So far my most challenging project. I had to implement a headless CMS to allow the client to update the website himself. I also had to implement a mailer, I did a custom hook to fetch data and many other things beside the front-end.",
+  imgSource: "/images/projects/mmw.png",
+  skills: ["React", "Next.js", "Node.js", "TailwindCSS", "Headless CMS", "Mailer"],
+  websiteUrl: "https://michaelmudcatward.com/",
+  githubUrl: "https://github.com/HugCls/MWprojet",
+  },
+  {
     name: 'La Voyette',
-    description: 'Team project, making a website from scratch for a theatre company. I personnally made all the front.',
+    description: 'Originally a team project for a theatre company, they migrated recently so i asked them to kept an early version. I personnaly made all the front.',
     imgSource: '/images/projects/lavoyette.png',
     skills: ['Next.js', 'Material UI', 'Typescript'],
     websiteUrl: 'https://la-voyette.vercel.app/',
     githubUrl: 'https://github.com/FabCom/LaVoyette',
   },
-  {
-    name: 'Ecris Ton Prénom',
-    description: 'My first big team project from scratch. Made in two weeks with two of my colleagues. Despite all the defects, the vibe of creation, the nights awake looking to solve problems made me realize how I love this. It s an educational game for the 3 - 5 y/o.',
-    imgSource: '/images/projects/ETP.png',
-    skills: ['RoR'],
-    websiteUrl: 'https://ecris-ton-prenom.herokuapp.com/',
-    githubUrl: 'https://github.com/profprogrammeur/ECRIS_TON_PRENOM',
-  },
+
   {
     name: 'Portfolio',
-    description: 'During my studies, I made this portfolio. It is a personal project, but I made it from scratch.',
+    description: 'This is a portfolio website. It was originally for a client but she asked me not to publish it. So I decided to make my own portfolio as a template.',
     imgSource: '/images/projects/pf.png',
     skills: ['React', 'Javascript', 'SCSS'],
     githubUrl: 'https://github.com/HugCls/THP-Next_Portfolio',
   },
-  {
-    name: 'Fake agency website',
-    description: 'During my studies, I made this website for a fake agency. It is a personal project, but I made it from scratch.',
-    imgSource: '/images/projects/webagency.png',
-    skills: ['React', 'Javascript'],
-    githubUrl: 'https://github.com/HugCls/THP-Next_Agency_Website',
-  },
-  {
-    name: 'Notepad',
-    description: 'During my studies, I made this Notepad. It is a personal project, but I made it from scratch.',
-    imgSource: '/images/projects/notepad.png',
-    skills: ['React', 'Javascript'],
-    githubUrl: 'https://github.com/HugCls/THP-Next_Bloc-Note',
-  },
+
 ]
 
 

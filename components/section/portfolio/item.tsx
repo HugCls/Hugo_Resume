@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Flex, Heading, Box } from '@chakra-ui/react'
+import { Link, Text, Flex, Heading, Box, useDisclosure, Button, ModalOverlay, Modal, ModalBody, ModalCloseButton, ModalHeader, ModalContent, ModalFooter } from '@chakra-ui/react'
 import Image from 'next/image'
 import ProjectButtons from './project-buttons'
 import SkillBadge from './skill-badge'
@@ -14,6 +14,7 @@ const Item: React.FC<ProjectsInterface> = ({
   websiteUrl,
   playStoreUrl
 }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Box
       as="article"
@@ -59,23 +60,43 @@ const Item: React.FC<ProjectsInterface> = ({
             alignSelf="center"
             textAlign="center"
             lineHeight="1.4rem"
+            mt="4"
           >
             {name}
           </Heading>
-          <Flex flexDir="column" mt="8" mb="3">
-            <FieldLabel>Description</FieldLabel>
-            <FieldText>{description}</FieldText>
+          <Flex flexDir='column' mt="8" mb="3">
+          {/* <ProjectButtons websiteUrl={websiteUrl} githubUrl={githubUrl} /> */}
+          <Button onClick={onOpen} mt="5" mb="3">Description</Button>
+          <Modal isCentered isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{name}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+          <FieldText>{description}</FieldText>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button variant='ghost' mr={3} onClick={onClose}>
+              Close
+            </Button>
+
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+      <ProjectButtons websiteUrl={websiteUrl} githubUrl={githubUrl} />
+
+
+
           </Flex>
 
           <SkillBadge skills={skills} />
+
         </Flex>
 
-        <ProjectButtons
-          websiteUrl={websiteUrl}
-          playStoreUrl={playStoreUrl}
-          githubUrl={githubUrl}
-        />
+
       </Flex>
+      {/* <ProjectButtons websiteUrl={websiteUrl} githubUrl={githubUrl} /> */}
     </Box>
   )
 }

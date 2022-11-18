@@ -1,8 +1,17 @@
 import React from 'react'
-import { Text, Flex, Heading, Link, Button, Stack } from '@chakra-ui/react'
+import {
+  Text,
+  Flex,
+  Heading,
+  Link,
+  Button,
+  Stack,
+  Image
+} from '@chakra-ui/react'
 import Subtitle from './subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import photohug from './../images/photohug.jpg'
 
 import about from '../../../data/en/about'
 
@@ -41,6 +50,15 @@ const About: React.FC = () => {
         </Heading>
 
         <Subtitle email={about.email} />
+        <Image
+        display={{ sm: 'block', lg: 'block' }}
+        alignSelf="center"
+          marginTop="10px"
+          borderRadius="full"
+          boxSize="200px"
+          src="/images/photohug.jpg"
+          alt="photo_hug"
+        />
       </motion.div>
 
       <motion.div

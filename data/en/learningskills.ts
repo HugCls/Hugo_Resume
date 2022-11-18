@@ -1,4 +1,4 @@
-import { SiNextDotJs, SiTypescript, SiRubygems } from 'react-icons/si'
+import { SiNuxtDotJs, SiTypescript, SiRubygems, SiVueDotJs } from 'react-icons/si'
 import { LearningSkillsInterface } from '../../components/section/learningSkills/types'
 
 
@@ -13,9 +13,12 @@ const learningSkills: LearningSkillsInterface[] = [
     icon: SiTypescript
   },
   {
-    name: 'Next.js',
-    icon: SiNextDotJs
+    name: 'Nuxt.js',
+    icon: SiNuxtDotJs
   },
+  { name: 'Vue.js',
+  icon: SiVueDotJs },
+
 ]
 
 

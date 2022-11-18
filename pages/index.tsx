@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Grid } from '@chakra-ui/react'
+import { Grid } from '@chakra-ui/react';
 import Header from '../components/header/'
 import About from '../components/section/about'
 import Portfolio from '../components/section/portfolio'
@@ -13,7 +13,7 @@ import LearningSkills from '../components/section/learningSkills'
 const Home: React.FC = () => {
   return (
     <Grid >
-      <Header />
+      <Header/>
       <About />
       <Portfolio />
       <Experiences />

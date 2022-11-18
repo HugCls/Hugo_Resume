@@ -11,10 +11,10 @@ import seoConfig from '../config/seo'
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <ThemeContainer>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
         <DefaultSeo {...seoConfig} />
         <Component {...pageProps} />
       </ThemeContainer>

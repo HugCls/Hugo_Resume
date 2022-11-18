@@ -6,6 +6,7 @@ import { ExperiencesInterface } from './types';
 const ExperiencesItem: React.FC<ExperiencesInterface> = ({
   name,
   description,
+  expTime,
   icon
 }) => {
   return (
@@ -33,6 +34,7 @@ const ExperiencesItem: React.FC<ExperiencesInterface> = ({
       <Text lineHeight="tall" fontWeight="light" fontSize="lg">
         {description}
       </Text>
+
     </Box>
   )
 }

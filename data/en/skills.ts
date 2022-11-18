@@ -1,9 +1,13 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3 } from 'react-icons/fa'
-import { SiJavascript } from 'react-icons/si'
+import { SiJavascript, SiNextDotJs } from 'react-icons/si'
 import { ImGit } from 'react-icons/im'
 import { SkillsInterface } from '../../components/section/skills/types'
 
 const skills: SkillsInterface[] = [
+  {
+    name: 'Next.js',
+    icon: SiNextDotJs
+  },
   {
     name: 'React.js',
     icon: FaReact
