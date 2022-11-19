@@ -30,10 +30,11 @@ const projects: ProjectsInterface[] = [
   {
     name: 'Portfolio',
     description:
-      'This is a portfolio website. It was originally for a client but she asked me not to publish it. So I decided to make my own portfolio as a template.',
+      'This is a portfolio website. It was originally for a client but the projects in it are secrete for now. So I decided to change it and left it as a template.',
     imgSource: '/images/projects/pf.png',
     skills: ['React', 'Javascript', 'SCSS'],
-    githubUrl: 'https://github.com/HugCls/THP-Next_Portfolio'
+    websiteUrl: 'https://HugCls.github.io/pf-sass/',
+    githubUrl: 'https://github.com/HugCls/pf-sass'
   },
   {
     name: 'Other projects',
