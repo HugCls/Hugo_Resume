@@ -59,9 +59,8 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
             <Button
               fontWeight="normal"
               leftIcon={<FaLink />}
-              bg="blue.500"
-              colorScheme="black"
-              color="white"
+
+              colorScheme="blue"
             >
               Website
             </Button>

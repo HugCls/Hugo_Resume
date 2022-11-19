@@ -11,7 +11,7 @@ const SkillBadge: React.FC<SkillBadge> = ({ skills }) => {
       <Flex flexWrap="wrap" align="flex-end">
         {skills.map(skill => (
           <Box key={skill} mr="2" _last={{ mr: '0' }}>
-            <Badge bg="gray.200" color="white">
+            <Badge colorScheme="gray">
               {skill}
             </Badge>
           </Box>

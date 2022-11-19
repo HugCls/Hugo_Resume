@@ -35,7 +35,7 @@ const Header: React.FC = props => {
   const transition = { delay: 0.7, duration: 0.9 }
 
   return (
-    <Box >
+    <Box>
       <Flex
         as="nav"
         id="#header"
@@ -53,7 +53,7 @@ const Header: React.FC = props => {
         zIndex={999}
         {...props}
       >
-        <Flex align="center" mr={5} >
+        <Flex align="center" mr={5}>
           <motion.div
             initial="hidden"
             animate="visible"
@@ -70,7 +70,11 @@ const Header: React.FC = props => {
           </motion.div>
         </Flex>
 
-        <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle} >
+        <Box
+          color="white"
+          display={{ sm: 'block', lg: 'none' }}
+          onClick={handleToggle}
+        >
           <motion.svg
             initial="hidden"
             animate="visible"
@@ -82,12 +86,13 @@ const Header: React.FC = props => {
                 opacity: 1
               }
             }}
-            fill="#212529"
+            color="white"
+            fill="#fafafa"
             width="22px"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Menu</title>
+            <title >Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </motion.svg>
         </Box>
@@ -97,6 +102,7 @@ const Header: React.FC = props => {
             sm: show ? 'block' : 'none',
             lg: 'flex'
           }}
+          color="white"
           width={{ sm: 'full', lg: 'auto' }}
           marginTop={{ sm: '20px', lg: '0' }}
         >

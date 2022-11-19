@@ -32,7 +32,7 @@ const ExperiencesItem: React.FC<ExperiencesInterface> = ({
         {name}
       </Heading>
       <Text lineHeight="tall" fontWeight="light" fontSize="lg">
-        {description}
+        {description} {expTime}
       </Text>
 
     </Box>
