@@ -5,6 +5,7 @@ import { navLinks } from './constants'
 import ScrollLink from '../scoll-link'
 import { motion } from 'framer-motion'
 import { ColorModeSwitcher } from './ColorModeSwitcher'
+import AlertPf from '../NewPf'
 
 interface MenuItem {
   link?: string
@@ -35,7 +36,7 @@ const Header: React.FC = props => {
   const transition = { delay: 0.7, duration: 0.9 }
 
   return (
-    <Box>
+    <><Box>
       <Flex
         as="nav"
         id="#header"
@@ -47,7 +48,7 @@ const Header: React.FC = props => {
         padding="1.5rem"
         paddingX={{ base: '2em', xl: '15%' }}
         paddingY="1.5em"
-        bg="gray.900"
+        bg="gray.500"
         boxShadow="0px 0px 20px rgb(231, 231, 231)"
         color="mode.text"
         zIndex={999}
@@ -92,7 +93,7 @@ const Header: React.FC = props => {
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title >Menu</title>
+            <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </motion.svg>
         </Box>
@@ -146,7 +147,8 @@ const Header: React.FC = props => {
           <ColorModeSwitcher color="white" />
         </motion.div>
       </Flex>
-    </Box>
+
+    </Box><AlertPf /></>
   )
 }
 

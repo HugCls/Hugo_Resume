@@ -6,7 +6,8 @@ import {
   Link,
   Button,
   Stack,
-  Image
+  Image,
+
 } from '@chakra-ui/react'
 import Subtitle from './subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -18,8 +19,10 @@ import about from '../../../data/en/about'
 const About: React.FC = () => {
   const transition = { delay: 0.2, duration: 0.9 }
 
+
+
   return (
-    <Flex
+    <><Flex
       id="about"
       flexDir="column"
       mt={{ sm: '32', lg: '40' }}
@@ -27,102 +30,102 @@ const About: React.FC = () => {
       mx="auto"
       height="100vh"
     >
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        transition={transition}
-        variants={{
-          hidden: { y: -180, opacity: 0 },
-          visible: {
-            y: 0,
-            opacity: 1
-          }
-        }}
-      >
-        <Heading
-          as="h1"
-          textTransform="uppercase"
-          fontSize={{ sm: '4xl', lg: '6xl' }}
-          fontWeight="bold"
-          mb="4"
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { y: -180, opacity: 0 },
+            visible: {
+              y: 0,
+              opacity: 1
+            }
+          }}
         >
-          {about.name}
-        </Heading>
+          <Heading
+            as="h1"
+            textTransform="uppercase"
+            fontSize={{ sm: '4xl', lg: '6xl' }}
+            fontWeight="bold"
+            mb="4"
+          >
+            {about.name}
+          </Heading>
 
-        <Subtitle email={about.email} />
-        <Image
-        display={{ sm: 'block', lg: 'block' }}
-        alignSelf="center"
-          marginTop="10px"
-          borderRadius="full"
-          boxSize="200px"
-          src="/images/photohug.jpg"
-          alt="photo_hug"
-        />
-      </motion.div>
+          <Subtitle email={about.email} />
+          <Image
+            display={{ sm: 'block', lg: 'block' }}
+            alignSelf="center"
+            marginTop="10px"
+            borderRadius="full"
+            boxSize="200px"
+            src="/images/photohug.jpg"
+            alt="photo_hug" />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        transition={transition}
-        variants={{
-          hidden: { x: -150, opacity: 0 },
-          visible: {
-            x: 0,
-            opacity: 1
-          }
-        }}
-      >
-        <Text
-          fontWeight="light"
-          mt="8"
-          maxW="840px"
-          fontSize={{ sm: 'md', lg: 'lg' }}
-          lineHeight="lg"
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { x: -150, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1
+            }
+          }}
         >
-          {about.description}
-        </Text>
-      </motion.div>
-
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        transition={transition}
-        variants={{
-          hidden: { y: 180, opacity: 0 },
-          visible: {
-            y: 0,
-            opacity: 1
-          }
-        }}
-      >
-        <Stack direction="row" spacing={5} mt="8">
-          <Link
-            isExternal
-            href="https://github.com/HugCls"
-            _hover={{ textDecor: 'none' }}
+          <Text
+            fontWeight="light"
+            mt="8"
+            maxW="840px"
+            fontSize={{ sm: 'md', lg: 'lg' }}
+            lineHeight="lg"
           >
-            <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
-              My Github
-            </Button>
-          </Link>
+            {about.description}
+          </Text>
+        </motion.div>
 
-          <Link
-            isExternal
-            href="https://www.linkedin.com/in/hugo-claisse-b9a22a222/"
-            _hover={{ textDecor: 'none' }}
-          >
-            <Button
-              leftIcon={<FaLinkedin />}
-              colorScheme="blue"
-              variant="solid"
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { y: 180, opacity: 0 },
+            visible: {
+              y: 0,
+              opacity: 1
+            }
+          }}
+        >
+          <Stack direction="row" spacing={5} mt="8">
+            <Link
+              isExternal
+              href="https://github.com/HugCls"
+              _hover={{ textDecor: 'none' }}
             >
-              My Linkedin
-            </Button>
-          </Link>
-        </Stack>
-      </motion.div>
-    </Flex>
+              <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
+                My Github
+              </Button>
+            </Link>
+
+            <Link
+              isExternal
+              href="https://www.linkedin.com/in/hugo-claisse-b9a22a222/"
+              _hover={{ textDecor: 'none' }}
+            >
+              <Button
+                leftIcon={<FaLinkedin />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                My Linkedin
+              </Button>
+            </Link>
+          </Stack>
+        </motion.div>
+      </Flex></>
   )
 }
 

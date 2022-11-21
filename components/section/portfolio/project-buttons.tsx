@@ -54,7 +54,8 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
             aria-label="See Website Online"
             label="See Website Online"
             placement="top"
-            bg="blue.500"
+            bg="mode.bg"
+            color="mode.text"
           >
             <Button
               fontWeight="normal"
@@ -75,7 +76,8 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
             aria-label="Github Repository"
             label="Github Repository"
             placement="top"
-            bg="gray.500"
+            bg="mode.bg"
+            color="mode.text"
           >
             <Button
               fontWeight="normal"
